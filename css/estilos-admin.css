@@ -1,0 +1,202 @@
+@charset "utf8";
+@import url(https://fonts.googleapis.com/css?family=Righteous|Russo+One|Special+Elite|Audiowide|Open+Sans|Ubuntu);
+
+/* Utilitários */
+*, *::before, *::after {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+.clearfix::before, .clearfix::after { 
+    content: ""; display: table; 
+}
+.clearfix::after { clear: both; }  
+.clearfix { *zoom: 1; }
+
+
+/* Mobile First */
+body {
+    background-color: #9fcdff;
+    font-family: "Ubuntu", sans-serif;
+    color: #3f3f40;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 { 
+    font-family: "Audiowide", sans-serif;
+    padding: 1%;
+    float: left;
+    width: 40%;
+}
+
+h1 a, h1 a:active {
+    text-decoration: none;
+    color: white;
+    letter-spacing: .3em;
+}
+
+#topo, footer { background-color: #305ca9; }
+
+#topo div, main {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+nav {
+    float: right;
+    width: 60%;
+    text-align: right;
+    padding: 1%;
+    margin-top: 1%;
+    height: inherit;
+}
+
+.opcoes {
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.opcoes a { text-decoration: none; border: none; }
+.opcoes a img {  transition: 1s; }
+.opcoes a img:hover, .opcoes a img:focus  { 
+    box-shadow: #305CA9 0 0 2px;
+}
+
+nav a {
+    background-color: white;
+    color: black;
+    padding: 1% 5%;
+    text-decoration: none;
+    font-weight: bold;
+    height: inherit;
+}
+
+nav a:hover, nav a:focus {
+    background-color: black;
+    color: white;
+}
+
+main {
+    display: block;
+    margin: 1% auto;
+    background-color: white;
+    min-height: 30em;
+    padding: 1%;
+}
+
+main h2, main p {
+    padding: 1%;
+}
+
+footer { 
+    text-align: center;
+    color: white;
+    font-size: .9em;
+    font-weight: bold;
+    min-height: 2em;
+    line-height: 2em;
+}
+
+#tabela-responsiva {
+    width: 100%;
+    overflow-y: hidden;
+}
+
+table {
+    margin: 1% auto;
+    width: 95%;
+    text-align: center;
+    
+}
+
+caption {
+    font-weight: bold;
+    color: #305ca9;
+    height: 2em;
+}
+
+th {
+    text-align: center;
+    background-color: rgba(159, 205, 255, .5);
+    font-size: 1.1em;
+}
+
+th, tr { height: 2em; }
+
+#gerenciamento-noticias th:nth-child(3){ width: 40%; }
+
+tr:nth-child(even){
+    background-color: azure;
+}
+
+tr:not(:first-child):hover {
+    background-color: #e8e8e8;
+}
+
+table a, table a:focus {
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+th a { background-color: green; }
+
+td:nth-last-child(2) a { /* alterar */
+    background-color: #ffa100;
+}
+
+td:last-child a {
+    background-color: red;
+}
+
+table a:hover, table a:focus {
+    background-color: black;
+    color: white;
+}
+
+
+form { 
+    border: solid 1px #305ca9; 
+    max-width: 1000px;
+    margin: auto;
+}
+
+input:not([type=radio]), select {
+    border: solid rgba(48,92,169,0.5) 1px;
+    height: 2.2em;
+    padding: 5px;
+}
+
+label, #rotulo-destaque {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+#cke_1_contents { height: 80px !important; }
+
+#titulo { width: 90%; }
+#imagem, #imagem_destaque { width: 60%; }
+
+input[type=radio] {
+    width: 15px;
+    height: 15px;
+}
+
+button {    
+    border: none;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+#inserir, #enviar {background-color: green;}
+#alterar {background-color: #ffa100;}

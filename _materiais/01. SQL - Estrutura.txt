@@ -1,0 +1,36 @@
+# Tabela de Categorias
+CREATE TABLE categorias (
+    id SMALLINT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+    categoria VARCHAR(30) NOT NULL
+);
+
+# Tabela de Notícias	
+CREATE TABLE noticias ( 
+    id SMALLINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    data DATE NOT NULL,
+    titulo TINYTEXT NOT NULL,
+    resumo MEDIUMTEXT NOT NULL,
+    texto LONGTEXT NOT NULL,
+    imagem VARCHAR(30) NULL,
+    destaque ENUM('Sim','Não') NOT NULL,
+    imagem_destaque VARCHAR(30) NULL
+);
+
+/* Relacionamento entre tabelas (definição de FK [Foreign Key, Chave Estrangeira]
+categoria.id (tabela noticias) se relaciona com id (tabela categorias) 
+1 categoria pode ter várias notícias (1:N) */
+
+ALTER TABLE noticias add COLUMN categoria_id SMALLINT;
+ALTER TABLE noticias ADD FOREIGN KEY (categoria_id) REFERENCES categorias(id);
+
+# Tabela de Usuários
+CREATE TABLE usuarios(
+    id TINYINT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+    nome VARCHAR(30) NOT NULL, 
+    email VARCHAR(30) NOT NULL, 
+    senha CHAR(128) NOT NULL, 
+    tipo ENUM('Supervisor','Comum') NOT NULL
+);
+
+
+

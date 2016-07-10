@@ -1,0 +1,309 @@
+@charset "utf8";
+@import url(https://fonts.googleapis.com/css?family=Righteous|Russo+One|Special+Elite|Audiowide|Open+Sans|Ubuntu);
+
+/* Utilitários */
+*, *::before, *::after {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+.clearfix::before, .clearfix::after { 
+    content: ""; display: table; 
+}
+.clearfix::after { clear: both; }  
+.clearfix { *zoom: 1; }
+
+
+/* Mobile First */
+body {
+    background-color: #9fcdff;
+    font-family: "Ubuntu", sans-serif;
+    color: #3f3f40;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+#contato-admin {
+    width: 100%;
+    background-color: azure;
+    text-align: right;
+    padding-right: 2%;
+}
+
+#contato-admin a {
+    font-size: 0.8em;
+    text-decoration: none;
+    padding: 0 1%;
+    font-weight: bold;
+    line-height: 2em;
+    color: #4575bc;
+}
+
+#contato-admin a:hover, #contato-admin a:focus {
+    color: #74a8ef;
+}
+
+#topo, main, #rodape {
+    background-color: white;
+    border-radius: 3px;
+    margin: 2% 1%;
+}
+
+h1 {
+    font-family: Audiowide, sans-serif;
+    letter-spacing: .3em;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 1% 0;
+}
+
+#topo h1 a {
+    text-decoration: none;
+    color: #305ca9;
+}
+
+#topo form {
+    text-align: center;
+    position: relative;
+    width: 80%; margin: auto;
+    border-radius: 3px;
+}
+
+#topo input, #topo button {
+    border: solid rgba(48,92,169,0.5) 1px;
+    height: 2.2em;
+    border-radius: inherit;
+}
+
+#topo input { width: 100%; }
+
+#topo button {
+    background-color: #9fcdff;
+    position: absolute;
+    right: -2px;
+    top: 2px;
+}
+nav h2 {
+    padding: 0% 1%;
+    text-align: center; 
+    font-family: "Russo One", sans-serif;
+    font-family: 0.9em;
+    font-weight: normal;
+    height: 2em;
+    line-height: 2em;
+}
+
+nav ul { margin: 0; padding: 0; }
+
+nav li { list-style: none; }
+
+nav {
+    cursor: pointer;
+    background: #305ca9;
+    color: white;
+    max-height: 3em;
+    overflow: hidden;
+    transition: max-height .8s;
+    border-radius: inherit;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid #4575bc 1px;
+}
+
+nav:active, nav:focus, nav:hover {
+    max-height: 40em;
+    transition: max-height .8s
+}
+
+
+nav a {
+    font-size: 1.1em;
+    display: block;
+    padding: .25em 1em;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 2%;
+}
+
+nav a:hover, nav a:focus {
+    background-color: white;
+    color: #4575bc;
+}
+
+
+main h2, main h3, main h4{
+    padding: 1% 1.5%;
+}
+
+main p {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+main h2 { 
+    font-size: 1.1em; 
+    color: #243e65;
+    border-bottom: solid 1px;
+}
+
+#rodape p {
+    font-size: 0.8em;
+    text-align: center;
+    padding: 1%;
+}
+
+main, #lista-de-noticias {
+    display: block; 
+    min-height: 20em;
+}
+
+hr {
+    width: 40%; margin: 2% auto;
+    height: 1px; border: none;
+    background-color: #9fcdff;
+}
+
+main a {
+    text-decoration: none;
+    color: #4575bc;
+}
+
+main a:hover, main a:focus {
+    /*color: #305ca9;*/
+    color: black;
+}
+
+.carousel-destaques {
+    background-color: rgba(69, 117, 188, .05);
+    /*padding: 5px;*/
+    max-height: 30em;
+}
+
+.carousel-destaques img {
+    max-width: 100%;
+    margin: auto;
+}
+
+article { margin-bottom: 1.5%; }
+article img { max-width: 100%; }
+
+.alinha-esquerda {
+    float: left;
+    margin: 1.5%;
+}
+
+.slick-dots { bottom: -40px !important; }
+
+/* CSS Form */
+#contato, #login {
+    margin: auto;
+    width: 90%;
+    max-width: 750px;
+}
+
+#contato input, #login input, #contato textarea {
+	border: solid 1px #300040;
+	border-radius:3px;
+	box-shadow:rgba(0,0,0,.3) 2px 2px 10px 1px;
+}
+
+#nome, #email, #telefone, #assunto, #assuntos, #login #senha  { 
+    height: 50px; 
+    width: 100%;
+    padding: 1%;
+}
+
+#mensagem { width: 100%; }
+
+#contato label, #login label {
+	font-size: 1e.1m;
+	font-weight:bold;
+    display: block;
+    float: left;
+    width: 120px;
+}
+
+#contato input:invalid, #contato textarea:invalid { border:#F00 2px solid; }
+
+#contato input:valid:not([type=submit]), #login #entrar 
+#contato textarea, select { 
+    border:#090 2px solid; 
+} 
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 700px) {
+    #topo { position: relative; }
+    
+    h1, #topo form, nav {
+        float: left;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+        width: 30%;
+    }
+    
+    #topo form {
+        width: 38%;
+        margin-top: 15px;
+    }
+    
+    nav {
+        width: 28%;
+        top: -7%;
+        right: 1%;
+        text-align: right;
+        position: absolute;
+        z-index: 1000;
+    }
+    
+    nav a {
+        padding-right: 10%;
+    }
+    
+    #topo, main, #rodape {
+        margin: 1% 0.5%;
+    }
+    
+    main p { padding-top: 1%; padding-bottom: 1%; }
+}
+
+@media all and (min-width: 900px) {
+    h1 { font-size: 3em; }
+    
+    #topo form { width: 42%; }
+    
+    #topo input, #topo button { height: 3em; }
+    
+    #topo button { width: 15%; }
+    
+    nav { width: 25%; top: -5%; }
+    
+    #carousel h4 { padding-bottom: 0; }
+    #carousel h3 { padding-bottom: 0.5%; padding-top: 0.5%;}
+    #carousel p { padding-top: 0.5%; }
+    
+}
+
+@media all and (min-width: 1200px) {
+    #container {
+        max-width: 1000px;
+        margin: auto;
+    }
+}

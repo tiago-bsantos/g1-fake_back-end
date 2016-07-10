@@ -1,0 +1,73 @@
+# Categorias
+INSERT INTO categorias (categoria) VALUES ('Ciência');
+INSERT INTO categorias (categoria) VALUES ('Educação');
+INSERT INTO categorias (categoria) VALUES ('Entretenimento');
+
+
+# Notícias	
+INSERT INTO noticias (
+    data, titulo, resumo, texto, imagem, destaque, imagem_destaque, categoria_id
+) VALUES (
+    '2016-04-27',
+    
+    'SpaceX pretende enviar primeira missão a Marte em 2018',
+    
+    '<p>A SpaceX planeja enviar uma nave não tripulada a Marte em 2018, afirmou a companhia de exploração espacial nesta quarta-feira, em um primeiro passo para cumprir o objetivo de seu fundador bilionário, Elon Musk, de levar pessoas para outro planeta.</p>',
+    
+    '<p>O programa, conhecido como Red Dragon, tem como objetivo desenvolver tecnologias necessárias para o transporte de seres humanos para Marte, uma meta de longo prazo da SpaceX e da agência espacial norte-americana, a Nasa.</p>
+    <p>\"A (nave) Dragon 2 é projetada para ser capaz de pousar em qualquer lugar do Sistema Solar\", disse Musk no Twitter. \"O programa Red Dragon a Marte é o primeiro teste de voo.\"</p>
+    <p>O anúncio marcou a primeira vez que a SpaceX definiu uma data para a missão não tripulada a Marte, afirmou a porta-voz da companhia Emily Shanklin, em nota à Reuters.</p>
+    <p>A companhia informou que vai fornecer detalhes do programa para Marte durante o Congresso Internacional de Astronáutica, em setembro.</p>
+    <p>Musk fundou a SpaceX em 2002 com objetivo de reduzir os custos de lançamento para permitir que a uma viagem à Marte seja acessível. A SpaceX pretende lançar seu foguete Mars antes do final do ano.</p>',
+    
+    'dragon-spacex.jpg',
+    'Sim',
+    'dragon-spacex-destaque.jpg',
+    1
+);
+
+
+INSERT INTO noticias (
+    data, titulo, resumo, texto, imagem, destaque, imagem_destaque, categoria_id
+) VALUES (
+    '2016-05-02',
+    
+    'Centro Paula Souza diz que 100% das Etecs passam a oferecer merenda',
+    
+    '<p>Falta de merenda é uma das queixas de alunos que ocupam prédio em SP.
+    Juiz diz que PM entrou em ocupação sem mandado e mandou polícia sair.</p>',
+    
+    '<p>O Centro Paula Souza, que administra as escolas técnicas (Etecs) e faculdades tecnológicas (Fatecs) de São Paulo, informou que a partir desta segunda-feira (2) 100% das Etecs passam a oferecer alimentação escolar. A falta de merenda é uma das principais queixas dos estudantes que invadiram a sede administrativa do centro na quinta-feira (28).</p>
+    <p>\"A partir de hoje, 100% das Etecs oferecem alimentação escolar. Está sendo criada uma Comissão Intersetorial de Governança da Alimentação Escolar com o objetivo de discutir e implementar propostas de melhorias imediatas na distribuição e oferta de alimentação escolar\", diz a nota.</p>
+    <p>Segundo a administração, o fornecimento de tíquetes ou vales-alimentação reivindicado pelos alunos é inviável, uma vez que o Centro Paula Souza não pode inovar em matéria regulada por Lei Federal que dispõe sobre os parâmetros mínimos da alimentação escolar, além de não dispor, em seu orçamento, de previsão para essa finalidade.</p>
+    <p>O governador Geraldo Alckmin considera que o problema da merenda foi resolvido. \"O curso técnico é médio ou pós-médio, então, quando foi concebido lá atrás, não tinha merenda. Mas nós resolvemos fazer. Das 212 [unidades], faltavam sete. Hoje nós completamos a sétima. Então não há razões para essas ocupações\", disse Alckmin.</p>',
+    
+    'estudantes.jpg',
+    'Não',
+    'estudantes-destaque-destaque.jpg',
+    2
+);
+
+
+
+# Usuários
+INSERT INTO usuarios (
+    nome, email, senha, tipo
+) VALUES (
+    'Tiago Santos',
+    'tiago.bsantos@sp.senac.br',
+    '123',
+    'Supervisor'
+);
+
+INSERT INTO usuarios (
+    nome, email, senha, tipo
+) VALUES (
+    'Programador Web',
+    'prog@web.br',
+    '456',
+    'Comum'
+);
+
+
+

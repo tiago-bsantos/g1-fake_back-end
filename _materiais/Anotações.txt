@@ -1,0 +1,3 @@
+Usar fontawesome ou outra para icones
+
+Prepared Statements é bom pra validar os dados automaticamente

@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?soxeb5');
+    src:    url('fonts/icomoon.eot?soxeb5#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?soxeb5') format('truetype'),
+        url('fonts/icomoon.woff?soxeb5') format('woff'),
+        url('fonts/icomoon.svg?soxeb5#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+    content: "\e907";
+}
+.icon-home3:before {
+    content: "\e900";
+}
+.icon-pencil:before {
+    content: "\e901";
+}
+.icon-file-text2:before {
+    content: "\e90b";
+}
+.icon-folder-upload:before {
+    content: "\e90c";
+}
+.icon-price-tags:before {
+    content: "\e90d";
+}
+.icon-phone:before {
+    content: "\e908";
+}
+.icon-envelop:before {
+    content: "\e902";
+}
+.icon-floppy-disk:before {
+    content: "\e903";
+}
+.icon-users:before {
+    content: "\e90e";
+}
+.icon-lock:before {
+    content: "\e909";
+}
+.icon-unlocked:before {
+    content: "\e90a";
+}
+.icon-bin:before {
+    content: "\e90f";
+}
+.icon-bin2:before {
+    content: "\e910";
+}
+.icon-switch:before {
+    content: "\e911";
+}
+.icon-menu:before {
+    content: "\e913";
+}
+.icon-plus:before {
+    content: "\e904";
+}
+.icon-cross:before {
+    content: "\e905";
+}
+.icon-checkmark:before {
+    content: "\e906";
+}
+.icon-circle-left:before {
+    content: "\e912";
+}
+
